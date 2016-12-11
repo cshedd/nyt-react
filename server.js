@@ -39,6 +39,7 @@ db.once('open', function () {
 // Main Route. This route will redirect to our rendered React application
 app.get('/', function(req, res){
   res.sendFile('./public/index.html');
+}) 
 
 // // GET request to query MONGODB for all saved articles
 app.get('/api/saved', function(req, res) {
